@@ -1,0 +1,22 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index",
+  "scripts": {
+    "test": "test command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "lab3"
+  },
+  "keywords": [
+    "lab3"
+  ],
+  "author": "Alexandra",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "lodash": "^4.16.4"
+  }
+}
