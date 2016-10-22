@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Letun (arukhs)</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style type="text/css">
+    body{
+      font-family: Verdana, Arial, Helvetica, sans-serif; 
+      font-size: 15px;
+    }
+    .number{
+      padding-left: 2px;
+    }
+    .column-3{
+      background-color: #000;
+    }
+    .up{
+      background-color: #fff0e0;
+      display: flex;
+      flex-direction: row;
+      font: bold 100% sans-serif;
+      padding-left: 4px;
+    }
+    .up-3{
+      display: flex;
+      flex-direction: row;
+    }
+    .line{
+      display: flex;
+      flex-direction: row;
+    }
+    .content{
+      display: flex;
+      flex-direction: row;
+    }
+    .title{
+      padding-left: 10px;
+      width: 232px;
+      color: blue;
+    }
+    .comment{
+      width:176px;
+      font-style: italic;
+    }
+    .module{
+      width: 103px;
+    }
+    .reporter{
+      width: 75px;
+      color: gray;
+    }
+    .status{
+      width: 94px;
+    }
+    .owner{
+      width: 62px;
+    }
+    .severity{
+      width: 73px;
+    }
+    .eye{
+      width: 26px;
+    }
+    .comment1{
+      width: 26px;
+    }
+    .created{
+      width: 112px;
+    }
+    .updated{
+      width: 115px;
+    }
+    .comment{
+      padding-left: 10px;
+    }
+    .module {
+      padding-left: 10px;
+    }
+    .line1{
+      display: -webkit-box;
+    }
+    .line_1{
+      display: none;
+    }
+    .open{
+      background-color: blue;
+      color: white;
+    }
+    .progress{
+      background-color: green;
+      color: white;
+    }
+    .green{
+      color:green;
+    }
+    .blue{
+      color: blue;
+    }
+    .red{
+      color:red;
+    }
+    .gray{
+      color: gray;
+    }
+    @media screen and (max-width: 1260px) {
+    .up-3{
+      display: flex;
+      flex-direction: column;
+    }
+    .line1{
+      display: block;
+    }
+    .line_1{
+      display: none;
+    }
+   }
+    @media screen and (max-width: 514px) {
+    .line1{
+      display: none;
+    }
+    .line_1{
+      display: flex;
+      padding-left: 10px;
+    }
+
+  }
+  </style>
+ </head>
+ <body>
+   <div class="up"> 
+    <div>#</div>
+    <div class="up-3">
+    <div class="title">Title</div>
+    <div class="comment">Comment</div>
+    <div class="line">
+    <div class="module">Module</div>
+    <div class="reporter">Reporter</div>
+    </div>
+    <div class="line_1">
+    <div class="status">Status</div>
+    <div class="owner">Owner</div>
+    </div>
+    </div>
+    <div class="up-3">
+    <div class="line1">
+    <div class="status">Status</div>
+    <div class="owner">Owner</div>
+    </div>
+    <div class="severity">Severity</div>
+    </div>
+    <div class="up-3">
+    <div class="eye"><i class="fa fa-eye" aria-hidden="true"></i></div>
+    <div class="comment1"><i class="fa fa-comment" aria-hidden="true"></i></div>
+    </div>
+    <div class="up-3">
+    <div class="created">Created</div>
+    <div class="updated">Updated</div>
+    <div>Due</div>
+    </div>
+   </div>
+   <div class="content">
+     <div class="number">1</div>
+     <div class="up-3">
+     <div class="title">App crashes when dragged by</div>
+     <div class="comment">Eddie, can you please.</div>
+     <div class="line">
+     <div class="module">Main App</div>
+     <div class="reporter">Ravan</div>
+     </div>
+     <div class="line_1">
+     <div class="status open">Open</div>
+     <div class="owner">Eddie</div>
+     </div>
+     </div>
+     <div class="up-3">
+     <div class="line1">
+     <div class="status open">Open</div>
+     <div class="owner">Eddie</div>
+     </div>
+     <div class="severity red">High</div>
+     </div>
+     <div class="up-3">
+     <div class="eye blue"><i class="fa fa-eye" aria-hidden="true"></i></div>
+     <div class="comment1 gray"><i class="fa fa-comment" aria-hidden="true"></i></div>
+     </div>
+     <div class="up-3">
+     <div class="created">Feb-1, 2016</div>
+     <div class="updated">Mar-13, 2016</div>
+     <div>Apr-4, 2016</div>
+   </div>
+   </div>
+   <div class="content">
+     <div class="number">2</div>
+     <div class="up-3">
+     <div class="title">Unable to save the data when</div>
+     <div class="comment">Let me take this up.</div>
+     <div class="line">
+     <div class="module">Save Screen</div>
+     <div class="reporter">Kiran</div>
+     </div>
+     <div class="line_1">
+     <div class="status open">Open</div>
+     <div class="owner">Vasyan</div>
+     </div>
+     </div>
+     <div class="up-3">
+     <div class="line1">
+     <div class="status open">Open</div>
+     <div class="owner">Vasyan</div>
+     </div>
+     <div class="severity blue">Medium</div>
+     </div>
+     <div class="up-3">
+     <div class="eye blue"><i class="fa fa-eye" aria-hidden="true"></i></div>
+     <div class="comment1 green"><i class="fa fa-comment" aria-hidden="true"></i></div>
+     </div>
+     <div class="up-3">
+     <div class="created">Mar-3, 2016</div>
+     <div class="updated">Apr-4, 2016</div>
+     <div>May-15, 2016</div>
+     </div>
+   </div>
+   <div class="content">
+     <div class="number">3</div>
+     <div class="up-3">
+     <div class="title">Improper alignment in Export</div>
+     <div class="comment">Hey, I'm not a.</div>
+     <div class="line">
+     <div class="module">Exports</div>
+     <div class="reporter">Ravan</div>
+     </div>
+     <div class="line_1">
+     <div class="status progress">In progress</div>
+     <div class="owner">Petia</div>
+     </div>
+     </div>
+     <div class="up-3">
+     <div class="line1">
+     <div class="status progress">In progress</div>
+     <div class="owner">Petia</div>
+     </div>
+     <div class="severity green">Low</div>
+     </div>
+     <div class="up-3">
+     <div class="eye gray"><i class="fa fa-eye" aria-hidden="true"></i></div>
+     <div class="comment1 green"><i class="fa fa-comment" aria-hidden="true"></i></div>
+     </div>
+     <div class="up-3">
+     <div class="created">Apr-14, 2016</div>
+     <div class="updated">Jun-6, 2016</div>
+     <div>May-5, 2016</div>
+     </div>
+     </div>
+ </body>
+</html>
