@@ -11,26 +11,25 @@
 <img class="name" src="logo.png">
 
 <div class="wrap" ng-controller="firstController">
-
   <div class= "col-lg-6 col-xs-12 books" ng-repeat='result in results| limitTo : filt'>
     <h3>{{result.book_details[0].title}}</h3>
 		<p class="abstr">{{result.book_details[0].description}}</p>
-    <p><a href={{result.amazon_product_url}}>see more...</a></p>
+		<p class="writenBy">Author: {{result.book_details[0].author}}</p>
 		<p class="writenBy">Publisher: {{result.book_details[0].publisher}}</p>
+    <p><a href={{result.amazon_product_url}}>see more...</a></p>
   </div>
 
   <div class=" addPost" id="showPost">
     <h3>{{factor.postInf.title}}</h3>
     <p class="abstr">{{factor.postInf.abstr}}</p>
-    <p><a href="{{factor.postInf.link}}">see more...</a></p>
 		<p class="writenBy">Publisher: {{factor.postInf.writenBy}}</p>
+    <p><a href="{{factor.postInf.link}}">see more...</a></p>
   </div>
 
   <div class="filter" id="fil">
     <h3>Filter</h3>
-  <input type="text"  ng-model="filt" ></input>
+  	<input type="text"  ng-model="filt" ></input>
   </div>
-
 </div>
 
 <div class="wrap_form" ng-controller="fromForm">
@@ -40,18 +39,22 @@
       <label for="title">Title</label>
       <input type="text" id="title" class="form-control" ng-model="post.title" placeholder="Title">
     </div>
+
     <div class="form-group">
       <label for="abstr">Description</label>
       <textarea ng-model="post.abstr" class="form-control" rows="5" placeholder="Description"></textarea>
     </div>
+
     <div class="form-group">
       <label for="link">Link to the books</label>
       <input type="url" id="link" class="form-control" ng-model="post.link" placeholder="Link">
     </div>
+
     <div class="form-group">
       <label for="WritenBy">Publisher</label>
       <input type="text" id="writenBy" class="form-control" ng-model="post.writenBy" placeholder="Publisher">
     </div>
+		
     <button type="submit" ng-click="save(post)" class="btn btn-default" onclick='document.getElementById("showPost").style.display="inline-block"; document.getElementById("fil").style.display="block";'>Add post</button>
   </form>
 </div>
