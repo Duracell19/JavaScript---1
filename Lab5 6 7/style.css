@@ -18,20 +18,19 @@ body{
 	overflow-y: auto;
 }
 
-.addPost{
-  	margin-left: 120px;
-    width: 40%;
-    height: 230px;
-    border: 2px solid #800080;
-    display: none;
-    border-radius: 8px;
-    margin-top: 10px;
-    padding: 0px 15px;
-    background: #ebebe0;
-}
-
 .books:nth-child(odd){
 	margin-left: 120px;
+}
+
+.addPost{
+	border-radius: 8px;
+	border: solid #800080 2px;
+	background: #ebebe0;
+	height:230px;
+	margin: 10px;
+	width: 40%;
+	overflow-y: auto;
+	display: none;
 }
 
 .abstr{
